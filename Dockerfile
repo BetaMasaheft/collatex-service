@@ -1,5 +1,8 @@
 FROM adoptopenjdk/openjdk8:alpine
 
+LABEL org.opencontainers.image.source=https://github.com/BetaMasaheft/CollateX-container
+LABEL org.opencontainers.image.description="Docker container for using CollateX as a web service"
+LABEL org.opencontainers.image.licenses=MIT
 LABEL org.opencontainers.image.authors="Claudius Teodorescu <claudius.teodorescu@gmail.com>"
 
 ARG COLLATEX_VERSION=1.7.1
