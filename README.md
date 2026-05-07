@@ -1,6 +1,7 @@
 # Docker container for CollateX
 
-## HTTP POST requests
+## HTTP POST requests with CURL
 
-{"witnesses":[{"id":"W1","content":"Hallo"},{"id":"W2","content":"Hello"}],"algorithm":"dekker","tokenComparator":{"type":"equality"},"joined":true,"transpositions":true}
+curl --header "Accept: application/tei+xml" --request POST --data '{"witnesses":[{"id":"W1","content":"<p>Hallo</p>"},{"id":"W2","content":"<p>Hello</p>"}],"algorithm":"dekker","tokenComparator":{"type":"equality"},"joined":true,"transpositions":true}' http://localhost:7369/collate
+
 
