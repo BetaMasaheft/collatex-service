@@ -11,11 +11,7 @@ COPY ./lib/collatex-tools-$COLLATEX_VERSION.jar collatex-tools.jar
 
 EXPOSE 7369
 
-RUN ls -l
-
 ENTRYPOINT ["java", "-jar", "/collatex-tools.jar", "--http"]
-
-
 
 # sudo docker build -t collatex-container .
 # sudo docker run -a stderr collatex-container:latest
